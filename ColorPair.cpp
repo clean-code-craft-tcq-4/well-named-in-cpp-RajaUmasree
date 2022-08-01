@@ -9,7 +9,7 @@
          return colorPairStr;
      }
 
-    ColorPair TelCoColorCoder::GetColorFromPairNumber(int pairNumber) {
+    TelCoColorCoder::ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
             (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
