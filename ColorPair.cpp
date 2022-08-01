@@ -3,9 +3,9 @@
 
     
      std::string TelCoColorCoder::ColorPair::ToString() {
-         std::string colorPairStr = MajorColorNames[majorColor];
+         std::string colorPairStr = TelCoColorCoder::MajorColorNames[majorColor];
          colorPairStr += " ";
-         colorPairStr += MinorColorNames[minorColor];
+         colorPairStr += TelCoColorCoder::MinorColorNames[minorColor];
          return colorPairStr;
      }
 
