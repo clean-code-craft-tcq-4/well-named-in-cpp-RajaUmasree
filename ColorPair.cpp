@@ -12,10 +12,10 @@
     TelCoColorCoder::ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         TelCoColorCoder::MajorColor majorColor = 
-            (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
+            (TelCoColorCoder::MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
         TelCoColorCoder::MinorColor minorColor =
-            (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
-        return ColorPair(majorColor, minorColor);
+            (TelCoColorCoder::MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
+        return TelCoColorCoder::ColorPair(majorColor, minorColor);
     }
     int TelCoColorCoder::GetPairNumberFromColor(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
