@@ -18,5 +18,5 @@
         return TelCoColorCoder::ColorPair(majorColor, minorColor);
     }
     int TelCoColorCoder::GetPairNumberFromColor(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor) {
-        return major * numberOfMinorColors + minor + 1;
+        return major * TelCoColorCoder::numberOfMinorColors + minor + 1;
     }
