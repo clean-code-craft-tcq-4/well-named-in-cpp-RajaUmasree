@@ -1,5 +1,6 @@
 #include <iostream>
-#include <assert.h>
+#include "ColorPair.h"
+
     
      std::string TelCoColorCoder::ColorPair::ToString() {
          std::string colorPairStr = MajorColorNames[majorColor];
