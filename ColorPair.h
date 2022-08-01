@@ -15,8 +15,6 @@ namespace TelCoColorCoder
     };
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-    ColorPair GetColorFromPairNumber(int pairNumber);
-    int GetPairNumberFromColor(MajorColor major, MinorColor minor)
   class ColorPair {
         private:
             MajorColor majorColor;
@@ -33,4 +31,6 @@ namespace TelCoColorCoder
             }
             std::string ToString();
   };
+   ColorPair GetColorFromPairNumber(int pairNumber);
+   int GetPairNumberFromColor(MajorColor major, MinorColor minor);
 }
