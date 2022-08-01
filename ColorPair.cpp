@@ -20,4 +20,3 @@
     int TelCoColorCoder::GetPairNumberFromColor(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
-
